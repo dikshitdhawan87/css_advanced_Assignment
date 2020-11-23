@@ -1,0 +1,70 @@
+div.partition span.rem{
+    font-size: 2rem;
+    background-color: aqua;
+}
+
+div.partition span.em{
+    font-size: 2em;
+    background-color: burlywood;
+}
+
+div.partition span.vh{
+    font-size: 5vh;
+}
+
+div.partition span.vw{
+    font-size: 3vw;
+}
+
+div.partition span.px{
+    font-size: 10px;
+}
+
+div.partition{
+border: 1px solid black;
+border-color: black;
+font-size: 20px;
+}
+
+div.partition div.ChildCombinator > p{
+background-color:lightblue;
+}
+
+div.partition div.AdjacentSiblingCombinator + p{
+    background-color: lightblue;
+}
+
+div.partition div.GeneralSiblingCombinator ~ p{
+        background-color: lightblue;
+}
+
+div.partition div.transition{
+    width:100px;
+    height: 100px;
+    background-color: blue;
+    margin: 5px;
+    transition: height 2s, width 2s;
+}
+
+div.partition div.transition:hover{
+    height: 150px;
+    width: 150px;
+}
+
+div.partition div.transitiontransformboth{
+    width:100px;
+    height: 100px;
+    background-color: blue;
+    margin: 5px;
+    transition: height 2s, width 2s, transform 2s;
+}
+
+div.partition div.transitiontransformboth:hover{
+    height: 150px;
+    width: 150px;
+    transform: rotate(180deg);
+}
+
+h1{
+    background-color: darkgray;
+}

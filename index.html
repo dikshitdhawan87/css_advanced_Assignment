@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Advanced css assignment</title>
+    <link rel="stylesheet" href="mycss.css">
+</head>
+
+<body>
+
+    <h1>Difference between rem,em,vh,vw,px.</h1>
+    <div class="partition">
+        <h3>rem : relative to root element</h3>
+        <p>example of span with font-size : 2rem</p>
+        <span class="rem">I am a span and my font size is 2 rem i.e i will always have twice the font size of root
+            element which is 16 px by default</span>
+    </div>
+    <br>
+    <div class="partition">
+        <h3>em : relative to parent element</h3>
+        <span>This div has a font-size of 20 px and hence the span should have 40 px as font size (=2em)</span>
+        <br>
+        <span class="em">I am a span and my font size is 2 em i.e i will always have twice the font size of parent
+            element(div) which is 20 px in this case</span>
+    </div>
+
+    <br>
+    <div class="partition">
+        <h3>vh : relative to height of view port where 1vh = 1% of height of view port</h3>
+        <span class="vh">Resize the height of window to see effect</span>
+    </div>
+    <br>
+    <div class="partition">
+        <h3>vw : relative to width of view port where 1vh = 1% of width of view port</h3>
+        <span class="vw">Resize the width of window to see effect</span>
+    </div>
+    <br>
+    <div class="partition">
+        <h3>px : fixed size</h3>
+        <span class="px">I have a fixed font-size of 10px</span>
+    </div>
+    <h1>Demo specifying difference between css combinators (>,+,~)</h1>
+    <div class="partition">
+        <h3>Explaining Child combinator (>)</h3>
+        <div class="ChildCombinator">
+            <p>I will be sleected as i am inside the div</p>
+            <p>I will also be selected as i am inside the div</p>
+        </div>
+        <p>I am outside the div so wont be selected</p>
+    </div>
+    <br>
+    <div class="partition">
+        <h3>Explaining Adjacent sibling combinator(+)</h3>
+        <div class="AdjacentSiblingCombinator">
+            <p>I will not be selected as i am inside the div hence its child and not sibling</p>
+        </div>
+        <p>I am outside the div and its sibling and immdiately following it so will be selected</p>
+        <p>I am also outside the div and its sibling but do not immidiately following it so wont be selected</p>
+    </div>
+    <br>
+    <div class="partition">
+        <h3>Explaining General sibling combinator(~)</h3>
+        <div class="GeneralSiblingCombinator">
+            <p>I will not be selected as i am inside the div hence its child and not sibling</p>
+        </div>
+        <p>I am outside the div and its sibling so will be selected</p>
+        <p>I am also outside the div and its sibling so will be selected</p>
+    </div>
+    <h1>Demo for css transition and transform.</h1>
+    
+    <div class="partition">
+        <div class="transition">
+            Transistion
+        </div>
+        <div class="transitiontransformboth">
+            Transistion + Transform (rotate)
+        </div>
+    </div>
+</body>
+
+</html>
